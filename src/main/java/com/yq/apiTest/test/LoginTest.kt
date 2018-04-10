@@ -40,7 +40,9 @@ class LoginTest {
         val n = body.jsonPath()
         val get = n.get<String>("data.name")
 
+
         var t = w.then()
+
         var b = t.body("data.name" , equalTo("hah"))
 
 
